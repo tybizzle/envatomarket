@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-primary {
+  color: #93cb52;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-primary {
+  background: #93cb52;
+  color: #fff;
+}
+
+.pady-1 { padding: 1.5rem 0; }
+.pady-2 { padding: 2rem 0; }
+.pady-3 { padding: 3rem 0; }
+
+.pad-1 { padding: 1.5rem; }
+.pad-2 { padding: 2rem; }
+.pad-3 { padding: 3rem; }
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.p-styling {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #93cb52;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background: #7ab436;
+}
+
+.btn-dark {
+  color: #fff;
+  background: #333;
+}
+
+.list {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 2px;
+}
+
+.burger-icon {
+  display: none;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #000;
+  color: #fff;
+  justify-content: space-between;
+  padding: 0.75rem;
+  z-index: 1;
+}
+
+#navbar ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  margin: 0.25rem 0.5rem;
+  padding: 0.75rem;
+}
+
+#navbar ul li a:hover {
+  background: #93cb52;
+  padding: 1.3rem;
+}
+
+/* Section: Showcase */
+#showcase {
+  background: #333 url('../img/showcase.jpg')
+  no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 2rem;
+  position: absolute;
+  top: 57px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Section: Services we provide */
+#services .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#services .items .item {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+}
+
+#services .items .item i {
+  background: #93cb52;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
+/* Section: History of our Company */
+#history {
+  display: flex;
+}
+
+#history div {
+  flex: 1;
+}
+
+#history .history-img {
+  background: url('../img/boardroom.jpg')
+  no-repeat center center/cover;
+}
+
+#history .history-text {
+  line-height: 1.8;
+  text-align: center;
+}
+
+#history .history-text .btn {
+  margin-top: 1.5rem;
+}
+
+/* Section: Our Clients */
+#clients .items {
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+/* Section: Our Team */
+#team {
+  display: flex;
+}
+
+#team div {
+  flex: 1;
+}
+
+#team .team-img {
+  background: url('../img/team.jpg') 
+  no-repeat center center/cover;
+}
+
+#team .team-text {
+  line-height: 1.6;
+}
+
+/* Section: Contact */
+#contact {
+  display: flex;
+}
+
+#contact .contact-form,
+#contact .map {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
